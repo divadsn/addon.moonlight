@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="addon.moonlight" name="Moonlight" version="0.0.1" provider-name="David Sn">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py">
+    		<provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>linux</platform>
+        <summary lang="en">Moonlight Embedded Launcher</summary>
+        <description lang="en">Kodi addon for moonlight-embedded, designed to run on Raspberry Pi using OpenELEC or OSMC.</description>
+        <license>GPL-3.0</license>
+        <language></language>
+        <source>https://github.com/divadsn/addon.moonlight</source>
+        <website>https://www.codebucket.de</website>
+        <email>divad.nnamtdeis@gmail.com</email>
+        <news>Updated the addon to use new addon.xml metadata</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
