@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <!-- Server IP -->
+    <setting label="Basic Settings" type="lsep" />
+    <setting id="server_ip" type="ipaddress" label="Server IP" default="0.0.0.0" />
+
+    <!-- Resolution settings -->
+    <setting id="resolution" type="labelenum" label="Resolution" values="Custom|720p|1080p|4k" default="720p" />
+    <setting id="width" type="text" label="Width" visible="eq(-1,0)" default="1366" />
+    <setting id="height" type="text" label="Height" visible="eq(-2,0)" default="768" />
+    <setting id="framerate" type="select" values="30|60" label="FPS" default="30" />
+
+    <!-- Stream settings -->
+    <setting id="bitrate" type="text" label="Bitrate" default="10000" />
+    <setting id="packetsize" type="text" label="Packet Size" default="1024" />
+
+    <!-- Controller settings -->
+    <setting label="Controller Settings" type="lsep" />
+    <setting id="input" type="text" label="Input device" default="/dev/input/event0" />
+    <setting label="Remap controller" type="action" action="RunScript(my.addon.id, remapController)"/>
+</settings>
